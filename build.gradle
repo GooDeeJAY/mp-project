@@ -1,0 +1,22 @@
+buildscript {
+    ext.kotlin_version = '1.8.0'
+    ext.compose_version = '1.4.0'
+    ext.coroutines_version = '1.4.2'
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+subprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
